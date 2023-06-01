@@ -7,10 +7,8 @@ var svg = d3.select("#chart-area")
   .attr("width", 400)
   .attr("height", 400);
 
-// Create a list called data with the values 25, 20, 15, 10, 5.
 var data = [25, 20, 15, 10, 5];
 
-// Bind the data to a series of rectangles of width 40 where the bound data represents its height.
 svg.selectAll("rect")
   .data(data)
   .enter()
